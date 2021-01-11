@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Code_Kata
 {
-    class Trip
+    public class Trip
     {
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }

@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Code_Kata
 {
-    class Driver
+    public class Driver
     {
         public String Name { get; set; }
         List<Trip> Trips { get; set; }
