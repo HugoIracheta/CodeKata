@@ -9,8 +9,9 @@ namespace Code_Kata
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             Run();
+            Console.WriteLine("\nPress any key to exit.");
+            Console.ReadKey();
         }
 
         static void Run()
@@ -25,15 +26,15 @@ namespace Code_Kata
             String[] lines = new string[] { };
 
             //read file as a string array
+            string startupPath = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "inputFile.txt");
             try
             {
-                string startupPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "inputFile.txt");
                 Console.WriteLine($"Searching file in: {startupPath}");
                 lines = File.ReadAllLines(startupPath);
             }catch(Exception ex)
             {
-                Console.WriteLine("Couldn't locate the file 'inputFile.txt' in the project root");
-                Environment.Exit(0);
+                Console.WriteLine($"Couldn't locate the file '{startupPath}'");
+                return;
             }
 
             //read every line in the file
