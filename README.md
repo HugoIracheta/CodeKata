@@ -2,6 +2,7 @@
 CodeKata project for SafeAuto
 
 Code Kata is a .NET Console Application that reads an input file and prints out the information.
+The solution includes unit tests that can be runned with dotnet test.
 
 ## How to use
 You can edit the [inputFile.txt](https://github.com/HugoIracheta/CodeKata/blob/main/inputFile.txt) contained in the project and add more trips or more drivers, then you run the project and the output with the required information will appear in a Console window
