@@ -13,3 +13,6 @@ The first command is Driver, which will register a new Driver in the app. Exampl
 Dan The second command is Trip, which will record a trip attributed to a driver. The line
 is space delimited with the following fields: the command (Trip), driver name, start
 time, stop time, miles driven. Times are in the format of hours:minutes.
+
+## Release
+You can just download the [1.0.0. release](https://github.com/HugoIracheta/CodeKata/releases/tag/1.0.0) if you just want to use the project.
